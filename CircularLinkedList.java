@@ -105,33 +105,14 @@ public class CircularLinkedList {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         CircularLinkedList cilist = new CircularLinkedList();
-        
         cilist.head = new Node(2);
         Node second = new Node(6);
         Node third = new Node(9);
         
         cilist.head.next = second;
         second.next = third;
-        third.next = cilist.head;
-
-        cilist.printList();
-        
-        cilist.insertAtHead(4);
-        cilist.printList();
-        
-        cilist.insertAtEnd(10);
-        cilist.printList();
-        
-        cilist.insertAfter(second, 8);
-        cilist.printList();
-        
-        cilist.deleteStart();
-        cilist.printList();
-        
-        cilist.deleteEnd();
-        cilist.printList();
     }
 }
 
